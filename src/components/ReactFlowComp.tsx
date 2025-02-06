@@ -1,9 +1,9 @@
 import React from 'react';
-import NodeComp from './node';
 import { ReactFlow,Background,Controls,Edge,Node } from '@xyflow/react';
 import { SelectedNode } from '../helper/types';
 import { changeNodeLocationWithHistory,onNodesChange } from '../store/nodesSlice';
 import { useAppDispatch } from '../App';
+import NodeComp from './node';
 
 type ReactFlowComp={
     nodes:Node[];

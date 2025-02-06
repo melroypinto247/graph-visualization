@@ -1,7 +1,7 @@
 import { Handle, type NodeProps, Position } from "@xyflow/react";
 import { type ColorNode } from "../helper/types.ts";
 
-function ColorChooserNode({ data }: NodeProps<ColorNode>) {
+function NodeComp({ data }: NodeProps<ColorNode>) {
   return (
     <div style={{ backgroundColor: data.color, borderRadius: 10 }}>
       <Handle type="target" position={Position.Top} />
@@ -13,4 +13,4 @@ function ColorChooserNode({ data }: NodeProps<ColorNode>) {
   );
 }
 
-export default ColorChooserNode;
+export default NodeComp;

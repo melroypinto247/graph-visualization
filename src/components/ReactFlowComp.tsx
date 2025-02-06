@@ -24,7 +24,7 @@ const ReactFlowComp:React.FC<ReactFlowComp> = ({nodes,edges,onClickNode}) => {
       onNodeDragStop={()=>{dispatch(changeNodeLocationWithHistory())}}
       onNodeClick={onClickNode}
       nodeTypes={nodeTypes}
-    //   fitView
+      fitView
       
     >
       <Background/>
